@@ -5,8 +5,81 @@
              Title="vInicio">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Sistema de Calificaciones UISRAEL"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Image Source="https://images.credly.com/size/400x400/images/f21ec585-4011-4fe7-a3a6-5f4469ba924c/blob.png"
+                HeightRequest="100"/>
+
+
+        <Picker x:Name="pkAlumnos" Title="Alumno">
+            <Picker.Items>
+                <x:String>Paola Oña</x:String>
+                <x:String>Wilson Chavez</x:String>
+                <x:String>Daniel Bernal</x:String>
+                <x:String>Roberto Soto</x:String>
+                <x:String>Juan Carlos Hidalgo</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <DatePicker x:Name="dpFecha" Date="04/09/2024"
+                    Format="MM/dd/yyyy"/>
+        
+        
+        <Label x:Name="lblFecha"
+               FontSize="20"
+               TextColor="Red"/>
+
+        <Button x:Name="btnFecha"
+                Text="VER FECHA"
+                Clicked="btnFecha_Clicked"/>
+
+
+       
+
+
+        <Label x:Name="lblparcial1"
+       Text="Parcial 1"
+        FontSize="20"
+        TextColor="Blue"/>
+
+        <Entry x:Name="txtNotaSeg"
+               Placeholder="Ingrese la nota del Seguimiento"
+               MaxLength="4"
+               Keyboard="Numeric"/>
+
+        <Entry x:Name="txtNotaExa"
+        Placeholder="Ingrese del Examen"
+        MaxLength="4"
+               Keyboard="Numeric"/>
+
+
+        <Label x:Name="lblparcial2"
+               Text="Parcial 2"
+                FontSize="20"
+                TextColor="Blue"/>
+
+        <Entry x:Name="txtNotaSeg2"
+        Placeholder="Ingrese la nota del Seguimiento 2"
+        MaxLength="4"
+        Keyboard="Numeric"/>
+
+        <Entry x:Name="txtNotaExa2"
+ Placeholder="Ingrese del Examen 2"
+ MaxLength="4"
+        Keyboard="Numeric"/>
+
+
+        <Button x:Name="btnParcial1"
+                Text="CALCULAR"
+                Clicked="btnParcial1_Clicked"/>
+
+
+        
+
+
+
+
     </VerticalStackLayout>
 </ContentPage>
